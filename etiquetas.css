@@ -3,21 +3,25 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    align-items: center;
     background-color: blue;
     font-family: 'Nunito Sans', sans-serif;
     height: 100vh;
 }
 .title {
-    width: 800px;
+    width: 90%;
     margin: 10px auto;
     color: #fff;
     display: flex;
     justify-content: center;
 }
-.title img {
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.nav img {
     width: 50px;
     margin: auto;
+    border: 1px solid black;
 }
 .cards {
     display: flex;
@@ -28,6 +32,9 @@ body {
     display: flex;
     flex-direction: column;
 
+.card-imgs > img {
+    object-fit: cover;
+}
 }
 .card {
     max-width: 600px;
@@ -171,4 +178,11 @@ td:first-child {
 }
 .formulario h5 {
     font-size: 19px;
+}
+@media (width <= 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
