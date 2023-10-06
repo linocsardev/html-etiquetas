@@ -12,6 +12,12 @@ body {
     width: 800px;
     margin: 10px auto;
     color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.title img {
+    width: 50px;
+    margin: auto;
 }
 .cards {
     display: flex;
@@ -25,17 +31,21 @@ body {
 }
 .card {
     max-width: 600px;
-    width: 480px;
+    width: 23%;
     min-width: 400px;
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 7px;
+    border: 5px solid black;
+    border-radius: 10px;
     background-color: #fff;
+}
+.card:first-child {
+    background-color: blue;
 }
 .subtitle {
     border-top: 3px solid slateblue;
     border-bottom: 3px solid slateblue; ;
     padding: 7px;
+    font-size: 20px;
 }
 .table {
     border-collapse: collapse;
@@ -46,12 +56,14 @@ th  {
     
 }
 .th, td {
-    border: 1px solid black;
-    padding: 3px 7px;
+    border: 2px solid black;
+    padding: 7px 15px;
 
 }
 td:first-child {
     text-align: center;
+    font-weight: 600;
+    color: #F40378;
 }
 .titulos {
     border: 3px solid slateblue;
@@ -66,8 +78,8 @@ td:first-child {
     margin: 5px;
 }
 .header {
-    border: 2px solid orangered;
-    width: 400px;
+    border: 3px solid orangered;
+    width: 100%;
     height: 40px;
     margin: 5px 5px;
     display: flex;
@@ -79,8 +91,8 @@ td:first-child {
     border: 2px solid skyblue;
     background-color: skyblue;
     color: #fff;
-    width: 400px;
-    height: 70px;
+    width: 100%;
+    height: 100px;
     margin: 5px 5px;
     display: flex;
     justify-content: center;
@@ -89,7 +101,7 @@ td:first-child {
 }
 .footer {
     border: 2px solid yellow;
-    width: 400px;
+    width: 100%;
     height: 60px;
     margin: 5px 2px;
     display: flex;
@@ -156,4 +168,7 @@ td:first-child {
     border: 3px solid slateblue;
     border-radius: 8px;
     padding: 5px;
+}
+.formulario h5 {
+    font-size: 19px;
 }
