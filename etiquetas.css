@@ -8,21 +8,33 @@ body {
     height: 100vh;
 }
 .title {
-    width: 90%;
-    margin: 10px auto;
+    width: 65%;
+    margin: auto;
     color: #fff;
     display: flex;
     justify-content: center;
 }
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .nav img {
-    width: 50px;
-    margin: auto;
+    width: 70px;
+    margin: 4px auto;
 }
+.select {
+    width: 13%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    border: 3px solid black;
+    font-size: 16px;
+}
+
+
 .cards {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 
@@ -36,9 +48,9 @@ body {
 }
 }
 .card {
-    max-width: 600px;
-    width: 23%;
-    min-width: 400px;
+    /* max-width: 600px; */
+    width: 22%;
+    /* min-width: 400px; */
     padding: 10px;
     border: 5px solid black;
     border-radius: 10px;
@@ -128,6 +140,9 @@ td:first-child {
 .lista_desordenada, .lista_ordenada {
     margin: 0;
 }
+#title_unordered_list, #title_order_list {
+    font-weight: 600;
+}
 .plantillita {
     margin-top: 20px;
     display: flex;
@@ -178,10 +193,23 @@ td:first-child {
 .formulario h5 {
     font-size: 19px;
 }
+
+.ocultar {
+    display: block;
+}
 @media (width <= 800px) {
     .cards {
         flex-direction: column;
         align-items: center;
+    }
+    .card {
+        min-width: 500px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .nav img {
+        width: 30px;
     }
     
 }

@@ -12,15 +12,23 @@
     <div class="nav">
         <img src="./assets/html-5.png" alt="">
         <h1 class="title">ETIQUETAS HTML ESENCIALES | CHEAT SHEET </h1>
+        <select class="select" id="select">
+            <option value="completo">Completo</option>
+            <option value="base">Para la base</option>
+            <option value="texto">Para el texto</option>
+            <option value="multimedia">Para la multimedia</option>
+            <option value="tablas">Para crear tablas</option>
+            <option value="formulario">Para crear formularios</option>
+        </select>
     </div>
     <div class="cards">
-        <div class=" card card-imgs">
+        <div class=" card card1 card-imgs">
             <img src="./assets/Captura desde 2023-10-06 11-31-30.png" alt="">
-            <img src="./assets//Captura desde 2023-10-06 11-31-56.png" alt="">
-            <img src="./assets//Captura desde 2023-10-06 11-32-10.png" alt="">
+            <img src="./assets/Captura desde 2023-10-06 11-31-56.png" alt="">
+            <img src="./assets/Captura desde 2023-10-06 11-32-10.png" alt="">
         </div>
-        <div class="card">
-            <div class="article">
+        <div class="card card2">
+            <div class="article_for_base">
                 <h4 class="subtitle">Para la base</h4>
                 <table class="table">
                     <thead>
@@ -56,7 +64,7 @@
                         </tr>
                         <tr>
                             <td>
-                                Title
+                                title
                             </td>
                             <td>
                                 titulo en la pestaña del navegador
@@ -64,7 +72,7 @@
                         </tr>
                         <tr>
                             <td>
-                                Link
+                                link
                             </td>
                             <td>
                                 Enlazar archivos de css u otra fuente
@@ -104,6 +112,8 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="article_for_texto">
                 <h4 class="subtitle">Para el texto</h4>
                 <table class="table">
                     <tbody>
@@ -192,180 +202,194 @@
                         </tr>
                     </tbody>
                 </table>
+
+            
             </div>
         </div>
-        <div class="card">
-            <h4 class="subtitle">Para multimedia</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Etiqueta</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>img</td>
-                        <td>Insertar una imagen</td>
-                    </tr>
-                    <tr>
-                        <td>video</td>
-                        <td>Insertar un video</td>
-                    </tr>
-                    <tr>
-                        <td>iframe</td>
-                        <td>Insertar contenido de otras paginas</td>
-                    </tr>
-                    <tr>
-                        <td>audio</td>
-                        <td>Insertar un audio</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4 class="subtitle">Para estructurar el contenido</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Etiqueta</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ul</td>
-                        <td>crea una lista sin orden</td>
-                    </tr>
-                    <tr>
-                        <td>ol</td>
-                        <td>Crea una lista ordenada</td>
-                    </tr>
-                    <tr>
-                        <td>li</td>
-                        <td>define los artículos de las listas</td>
-                    </tr>
-                </tbody>
-                <div class="listas">
-                    <ul class="lista_desordenada">
-                        <li>Este es el primer item</li>
-                        <li>Este es el segundo item</li>
-                        <li>Este es el tercer item</li>
-                    </ul>
-                    <br>
-                    <ol class="lista_ordenada">
-                        <li>Este es el primer item</li>
-                        <li>Este es el segundo item</li>
-                        <li>Este es el tercer item</li>
-                    </ol>
+
+        <div class="card card3">
+            <div class="article_for_multimedia">
+                <h4 class="subtitle">Para multimedia</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Etiqueta</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>img</td>
+                            <td>Insertar una imagen</td>
+                        </tr>
+                        <tr>
+                            <td>video</td>
+                            <td>Insertar un video</td>
+                        </tr>
+                        <tr>
+                            <td>iframe</td>
+                            <td>Insertar contenido de otras paginas</td>
+                        </tr>
+                        <tr>
+                            <td>audio</td>
+                            <td>Insertar un audio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="article_for_contenido">
+                <h4 class="subtitle">Para estructurar el contenido</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Etiqueta</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ul</td>
+                            <td>crea una lista sin orden</td>
+                        </tr>
+                        <tr>
+                            <td>ol</td>
+                            <td>Crea una lista ordenada</td>
+                        </tr>
+                        <tr>
+                            <td>li</td>
+                            <td>define los artículos de las listas</td>
+                        </tr>
+                    </tbody>
+                    <div class="listas">
+                        <div id="title_unordered_list">Lista sin orden (ul)</div>
+                        <ul class="lista_desordenada">
+                            <li>Este es el primer item</li>
+                            <li>Este es el segundo item</li>
+                            <li>Este es el tercer item</li>
+                        </ul>
+                        <br>
+                        <div id="title_order_list">Lista ordenada (ol)</div>
+                        <ol class="lista_ordenada">
+                            <li>Este es el primer item</li>
+                            <li>Este es el segundo item</li>
+                            <li>Este es el tercer item</li>
+                        </ol>
+                    </div>
+                    <tbody>
+                        <tr>
+                            <td>div</td>
+                            <td>Secciona o agrupa etiquetas</td>
+                        </tr>
+                        <tr>
+                            <td>nav</td>
+                            <td>Crea el menú de navegación</td>
+                        </tr>
+                        <tr>
+                            <td>header</td>
+                            <td>Define la cabecera de la pagina</td>
+                        </tr>
+                        <tr>
+                            <td>footer</td>
+                            <td>Define el pie de pagina</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="plantillita">
+                    <div class="header"> Header | nav</div>
+                    <div class="main">Main</div>
+                    <div class="footer">Footer</div>
                 </div>
-                <tbody>
-                    <tr>
-                        <td>div</td>
-                        <td>Secciona o agrupa etiquetas</td>
-                    </tr>
-                    <tr>
-                        <td>nav</td>
-                        <td>Crea el menú de navegación</td>
-                    </tr>
-                    <tr>
-                        <td>header</td>
-                        <td>Define la cabecera de la pagina</td>
-                    </tr>
-                    <tr>
-                        <td>footer</td>
-                        <td>Define el pie de pagina</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="plantillita">
-                <div class="header"> Header | nav</div>
-                <div class="main">Main</div>
-                <div class="footer">Footer</div>
             </div>
         </div>
-        <div class="card">
-            <h4 class="subtitle">Para crear tablas</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Etiqueta</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>table</td>
-                        <td>Crea una tabla</td>
-                    </tr>
-                    <tr>
-                        <td>tr</td>
-                        <td>Crea las filas</td>
-                    </tr>
-                    <tr>
-                        <td>td</td>
-                        <td>Crea las columnas</td>
-                    </tr>
-                    <tr>
-                        <td>th</td>
-                        <td>Crea el titulo de cada columna</td>
-                    </tr>
-                    <tr>
-                        <td>col</td>
-                        <td>Especifica las propiedades de las columnas</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4 class="subtitle">Para crear formularios</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Etiqueta</th>
-                        <th>Descripción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>form</td>
-                        <td>Crea formulario</td>
-                    </tr>
-                    <tr>
-                        <td>input</td>
-                        <td>Campo para introducir datos</td>
-                    </tr>
-                    <tr>
-                        <td>label</td>
-                        <td>Para el título del input</td>
-                    </tr>
-                    <tr>
-                        <td>textarea</td>
-                        <td>Campo para introducir mucho texto</td>
-                    </tr>
-                    <tr>
-                        <td>button</td>
-                        <td>Para crear un boton</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="formulario">
-                <h5>CONTACTO</h5>
-                <div class="form-group">
-                    <label for="">Nombre</label>
-                    <input type="text">
-                </div>
-                <div class="form-group">
-                    <label for="">Email</label>
-                    <input type="text">
-                </div>
-                <div class="form-group">
-                    <label for="">Mensaje</label>
-                    <textarea name="mensaje" id="" cols="15" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                    <button>Enviar mensaje</button>
+        <div class="card card4">
+            <div class="article_for_tables">
+                <h4 class="subtitle">Para crear tablas</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Etiqueta</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>table</td>
+                            <td>Crea una tabla</td>
+                        </tr>
+                        <tr>
+                            <td>tr</td>
+                            <td>Crea las filas</td>
+                        </tr>
+                        <tr>
+                            <td>td</td>
+                            <td>Crea las columnas</td>
+                        </tr>
+                        <tr>
+                            <td>th</td>
+                            <td>Crea el titulo de cada columna</td>
+                        </tr>
+                        <tr>
+                            <td>col</td>
+                            <td>Especifica las propiedades de las columnas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="article_for_forms">
+                <h4 class="subtitle">Para crear formularios</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Etiqueta</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>form</td>
+                            <td>Crea formulario</td>
+                        </tr>
+                        <tr>
+                            <td>input</td>
+                            <td>Campo para introducir datos</td>
+                        </tr>
+                        <tr>
+                            <td>label</td>
+                            <td>Para el título del input</td>
+                        </tr>
+                        <tr>
+                            <td>textarea</td>
+                            <td>Campo para introducir mucho texto</td>
+                        </tr>
+                        <tr>
+                            <td>button</td>
+                            <td>Para crear un boton</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="formulario">
+                    <h5>CONTACTO</h5>
+                    <div class="form-group">
+                        <label for="">Nombre</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mensaje</label>
+                        <textarea name="mensaje" id="" cols="15" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button>Enviar mensaje</button>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
+    <script src="etiquetas.js"></script>
 </body>
 
 </html>
